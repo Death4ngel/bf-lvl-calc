@@ -1,9 +1,4 @@
-// Exp
-var v = [];
-// Energy
-var w = [];
-var n = 0;
-var quests = [];
+var quests = {};
 
 $(document).ready(function() {
 	$.get('data.csv', function(data) {
@@ -11,20 +6,71 @@ $(document).ready(function() {
 		for (var i = 1; i < lines.length; ++i) {
 			var line = lines[i];
 			var tokens = line.split(",");
-			quests.push(tokens[0] + " (" + tokens[1] + "): " + tokens[2]);
-			w.push(parseInt(tokens[3]));
-			v.push(parseInt(tokens[5]));
-			++n;
+			if (!quests[tokens[0]]) {
+				quests[tokens[0]] = [];
+			}
+			var name = tokens[1] + " (" + tokens[2] + "): " + tokens[3];
+			var quest = { "name": name, "nrg": parseInt(tokens[4]), "exp": parseInt(tokens[6]) };
+			quests[tokens[0]].push(quest);
 		};
+		var html = "";
+		quests.Mistral.forEach(function(quest) {
+			html += "<option>" + quest.name + "</option>\n";
+		});
+		$("#mistral").html(html);
+		html = "";
+		quests.Cordelica.forEach(function(quest) {
+			html += "<option>" + quest.name + "</option>\n";
+		});
+		$("#cordelica").html(html);
 	});
+	$('#nrgAvail').keypress(function(e) {
+        if(e.which == 13) {
+            $(this).blur();
+            $('#go').focus().click();
+            return false;
+        }
+    });
 	$("#go").click(function() {
+		var v = [];	// exp
+		var w = [];	// nrg
 		var W = parseInt($("#nrgAvail").val());
+		var n = 0;
+		var questNames = [];
+		var questName = $('#mistral').children(':selected').text();
+		for (var i = 0; i < quests.Mistral.length; ++i) {
+			var quest = quests.Mistral[i];
+			v.push(quest.exp);
+			w.push(quest.nrg);
+			++n;
+			questNames.push(quest.name);
+			if (quest.name === questName) {
+				break;
+			}
+		};
+		questName = $('#cordelica').children(':selected').text();
+		for (var i = 0; i < quests.Cordelica.length; ++i) {
+			var quest = quests.Cordelica[i];
+			v.push(quest.exp);
+			w.push(quest.nrg);
+			++n;
+			questNames.push(quest.name);
+			questNames.push(quest.name);
+			if (quest.name === questName) {
+				break;
+			}
+		};
+		quests.Dungeon.forEach(function(quest) {
+			v.push(quest.exp);
+			w.push(quest.nrg);
+			++n;
+			questNames.push(quest.name);
+		});
 		var result = unboundedKnapsack(v,w,W,n);
 		var html = "";
-		var doQuests = result["quests"];
-		for (var i in doQuests) {
-			html += quests[doQuests[i]] + "<br>\n"
-		}
+		result["quests"].forEach(function(index) {
+			html += questNames[index] + "<br>\n"
+		});
 		html += "Total exp: " + result["exp"]
 		$("#quests").html(html);
 	});

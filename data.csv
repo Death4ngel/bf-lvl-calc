@@ -1,165 +1,165 @@
-,,,Energy,Battles,EXP,EXP/Energy
-Mistral,First,Start of Adventure,3,5,20,6.666666667
-Mistral,First,Monsters of the Prairie,3,5,25,8.333333333
-Mistral,First,Guardians of the Prairie,5,6,29,5.8
-Mistral,Fire,Cave of Dancing Flames,3,5,32,10.66666667
-Mistral,Fire,Wielder of Fire,3,5,35,11.66666667
-Mistral,Fire,The Thief's Hideout,4,5,50,12.5
-Mistral,Fire,The Blazing Beast,5,6,80,16
-Mistral,Water,Breath Freezing Snowfields,3,5,35,11.66666667
-Mistral,Water,Manipulator of the Water,3,5,40,13.33333333
-Mistral,Water,The Pirate on Ice,4,5,53,13.25
-Mistral,Water,The Dragon Hunting Ice Night,5,6,83,16.6
-Mistral,Earth,Shadowy Forests,3,5,36,12
-Mistral,Earth,Puppeteer of the Trees,3,5,42,14
-Mistral,Earth,Bandit of the Forest,4,5,57,14.25
-Mistral,Earth,Hunter from the Forest,5,6,84,16.8
-Mistral,Thunder,Thunder Blasting Wetlands,3,5,41,13.66666667
-Mistral,Thunder,Commander of the Thunder,3,5,47,15.66666667
-Mistral,Thunder,Pirate of the Wetlands,4,5,59,14.75
-Mistral,Thunder,The Thundering Strategist,5,6,87,17.4
-Mistral,Light,Sacred Ruins,4,6,44,11
-Mistral,Light,Wielder of the Light,4,6,51,12.75
-Mistral,Light,The White Horse of Light,5,6,62,12.4
-Mistral,Light,Moonlit Battle,7,7,89,12.71428571
-Mistral,Dark,The Heinous Chamber,4,6,46,11.5
-Mistral,Dark,Manipulator of the Dark,4,6,53,13.25
-Mistral,Dark,The Cursed Snake,5,6,65,13
-Mistral,Dark,The Monster Slaying Blade,7,7,91,13
-Mistral,Final,The Skyhigh Tower,5,7,70,14
-Mistral,Final,Monsters of the Corridor,5,7,90,18
-Mistral,Final,The Stairs of Trial,6,7,110,18.33333333
-Mistral,Final,The Forged Gigantor,8,8,180,22.5
-Mistral,Bonus,Asleep in the Ice,20,5,2000,100
-Morgan,Fire,The Burning Desert,5,7,180,36
-Morgan,Fire,Bandit of the Desert,5,7,230,46
-Morgan,Fire,The Precarious Beast Master,7,8,300,42.85714286
-Morgan,Fire,The Power Seeking Swordsman,9,9,600,66.66666667
-Morgan,Water,The Endless Shores,5,7,220,44
-Morgan,Water,Pirate of the Shallow Waters,5,7,260,52
-Morgan,Water,Knight of the Ripples,7,8,310,44.28571429
-Morgan,Water,Incarnation of Water,7,8,380,54.28571429
-Morgan,Water,Princess of the Icy Blade,9,9,650,72.22222222
-Morgan,Earth,Pitch Dark Forests,5,7,240,48
-Morgan,Earth,The Hunter of Time,7,8,330,47.14285714
-Morgan,Earth,Incarnation of the Forest,7,8,410,58.57142857
-Morgan,Earth,The Earth Shattering Spear,9,9,700,77.77777778
-Morgan,Thunder,The Thunder Wrecked Land,5,7,280,56
-Morgan,Thunder,Thief from the Skies,5,7,350,70
-Morgan,Thunder,The Bewitching Tactician,7,8,390,55.71428571
-Morgan,Thunder,Incarnation of Thunder,7,8,450,64.28571429
-Morgan,Thunder,A Flash of Lightning,9,9,760,84.44444444
-Morgan,Light,Land of the Light,6,7,350,58.33333333
-Morgan,Light,The Magnificent Pegasus,6,7,460,76.66666667
-Morgan,Light,Guardian of the Light,8,8,540,67.5
-Morgan,Light,Incarnation of the Light,8,8,560,70
-Morgan,Light,Sword of Lightning Speed,10,9,800,80
-Morgan,Dark,The Land Devoured By Monsters,6,7,380,63.33333333
-Morgan,Dark,The Lusting Snake,6,7,490,81.66666667
-Morgan,Dark,Incarnation of the Dark,8,8,600,75
-Morgan,Dark,The Peculiar Black Knight,10,9,860,86
-Morgan,Final,The Never-Ending Tower,7,9,450,64.28571429
-Morgan,Final,Stairway to the Heavens,7,9,520,74.28571429
-Morgan,Final,Dance of the Lightning Flaems,8,9,600,75
-Morgan,Final,Gale of the Ice Tree,8,9,700,87.5
-Morgan,Final,Shadowless Creatures,9,9,800,88.88888889
-Morgan,Final,The Eroding Barricade,10,10,1000,100
-St. Lamia,Fire,Scorching Trails,8,8,800,100
-St. Lamia,Fire,Watchdog from Hell,8,8,930,116.25
-St. Lamia,Fire,Wings of the flaming Skies,9,9,1300,144.4444444
-St. Lamia,Fire,The Banished Fire Dragon,9,9,1500,166.6666667
-St. Lamia,Fire,Phoenix of the Volcano,12,11,2000,166.6666667
-St. Lamia,Water,Mountain Snowstorm,8,8,930,116.25
-St. Lamia,Water,The Captivated Water Sprite,8,8,1260,157.5
-St. Lamia,Water,The Spring of Power,9,9,1440,160
-St. Lamia,Water,Ruler of ther Water,9,9,1860,206.6666667
-St. Lamia,Water,The Mountain-dwelling Devil,12,11,2230,185.8333333
-St. Lamia,Earth,To the Crimson Forests,8,8,1050,131.25
-St. Lamia,Earth,Frail Spirit of the Forests,8,8,1360,170
-St. Lamia,Earth,Discord of the Earth,8,9,1750,218.75
-St. Lamia,Earth,Maiden of the Trees,8,9,1930,241.25
-St. Lamia,Earth,The World Tree,10,11,2220,222
-St. Lamia,Thunder,Tarnished Peaks,8,8,1080,135
-St. Lamia,Thunder,Cyclops of Lightning,8,8,1388,173.5
-St. Lamia,Thunder,Float Like A Butterfly,8,9,1780,222.5
-St. Lamia,Thunder,The Riotous Thunderbird,8,9,2010,251.25
-St. Lamia,Thunder,The Raged Beast of Destruction,10,11,2350,235
-St. Lamia,Light,Forbidden Sacred Grounds,9,8,1250,138.8888889
-St. Lamia,Light,The Flourishing Garden,9,8,1430,158.8888889
-St. Lamia,Light,Knight of the Light,9,9,1820,202.2222222
-St. Lamia,Light,The Gooddess of War,9,9,2050,227.7777778
-St. Lamia,Light,Conqueror of the Heavens,12,11,2400,200
-St. Lamia,Dark,A Putrid Abyss,9,8,1280,142.2222222
-St. Lamia,Dark,Vagabond of the Monster's Den,9,8,1460,162.2222222
-St. Lamia,Dark,Dwelling of the Souls,9,9,1850,205.5555556
-St. Lamia,Dark,The Midnight Aristocrat,9,9,2100,233.3333333
-St. Lamia,Dark,The Death-beckoning Devo;,12,11,2440,203.3333333
-St. Lamia,Final,To the Abominable Castle,9,10,1600,177.7777778
-St. Lamia,Final,The Gates of Hell,9,10,2000,222.2222222
-St. Lamia,Final,The Phony Paradise,9,11,2300,255.5555556
-St. Lamia,Final,Saint and Devil,10,11,2500,250
-St. Lamia,Final,The Fourfold Pillar,10,11,2600,260
-St. Lamia,Final,Creator of the World,14,12,3000,214.2857143
-Cordelica,Fire,Inferno Gate,7,7,450,64.28571429
-Cordelica,Fire,Cave-Dwelling Assassins,7,7,550,78.57142857
-Cordelica,Fire,Hot Gale's Caress,8,8,850,106.25
-Cordelica,Fire,Before the Flame Princess,10,9,1000,100
-Cordelica,Water,The Foot of the Rainbow,7,7,470,67.14285714
-Cordelica,Water,Behind the Warefall,8,8,700,87.5
-Cordelica,Water,An Invisible Presence,8,8,900,112.5
-Cordelica,Water,The Battleaxe Descends,10,9,1100,110
-Cordelica,Earth,Entering the Foliage,9,8,1300,144.4444444
-Cordelica,Earth,Labyrinth of Trees,9,8,1410,156.6666667
-Cordelica,Earth,The Bandits' Trap,10,9,1800,180
-Cordelica,Earth,The Roaring Warrior,10,9,1920,192
-Cordelica,Earth,Master of Lomass,14,11,2100,150
-Cordelica,Thunder,The Moonlit Fortress,9,8,1330,147.7777778
-Cordelica,Thunder,Rushing the Enemy,9,8,1450,161.1111111
-Cordelica,Thunder,Assault from Above,10,9,1890,189
-Cordelica,Thunder,Cold-Hearted Sentries,10,9,2030,203
-Cordelica,Thunder,A Peaceful Courtyard,14,11,2300,164.2857143
-Cordelica,Light,The Shining Tower,10,10,2000,200
-Cordelica,Light,A Roar from the Darkness,10,10,2120,212
-Cordelica,Light,Deadly Melody,10,10,2180,218
-Cordelica,Light,Phoenix and the Sea Monster,12,10,2450,204.1666667
-Cordelica,Light,Dance of the Knight,12,10,2580,215
-Cordelica,Light,Howls and Gunshots,12,10,2630,219.1666667
-Cordelica,Light,The Voice of God,15,10,3100,206.6666667
-Cordelica,Dark,Into the Darkness,10,10,2060,206
-Cordelica,Dark,Protector of Nature,10,10,2160,216
-Cordelica,Dark,Howls in the Void,10,10,2240,224
-Cordelica,Dark,Where Lightning Strikes,12,10,2530,210.8333333
-Cordelica,Dark,Unifier of Demons,12,10,2681,223.4166667
-Cordelica,Dark,Hunter of Death,12,10,2750,229.1666667
-Cordelica,Dark,Rondo of Nightmares,15,10,3300,220
-Cordelica,Final,The Wandering the Ruins,12,10,2700,225
-Cordelica,Final,Last Light of the Ruins,12,10,2700,225
-Cordelica,Final,Beneath Ebony Wings,12,10,2700,225
-Cordelica,Final,A Guiding Star,12,10,2700,225
-Cordelica,Final,The Spoiled Fesco,12,10,2700,225
-Cordelica,Final,The Meaning of Irate Souls,12,10,2700,225
-Cordelica,Final,Rampage of the Giants,14,10,3200,228.5714286
-Cordelica,Final,The Giant God Awakes,16,11,3800,237.5
-Cordelica,Bonus,The Amorphus Being,25,5,2000,80
-Dungeon,Monday,Sacred Land of the Souls Lv. 1,13,6,300,23.07692308
-Dungeon,Monday,Sacred Land of the Souls Lv. 2,20,8,1500,75
-Dungeon,Monday,Sacred Land of the Souls Lv. 3,25,8,2500,100
-Dungeon,Tuesday,Garden of Nymphs,10,5,200,20
-Dungeon,Tuesday,Garden of Spirits,20,5,1300,65
-Dungeon,Tuesday,Garden of Idols,25,5,3000,120
-Dungeon,Tuesday,Phantom Pots,25,5,3000,120
-Dungeon,Wednesday,The Cave of Desires Lv. 1,10,5,500,50
-Dungeon,Wednesday,The Cave of Desires Lv. 2,20,6,2800,140
-Dungeon,Wednesday,The Cave of Desires Lv. 3,25,6,3500,140
-Dungeon,Thursday,Ruins of Fire Lv. 3,30,8,4000,133.3333333
-Dungeon,Thursday,Ruins of Water Lv. 3,30,8,4000,133.3333333
-Dungeon,Thursday,Ruins of Earth Lv. 3,30,8,4000,133.3333333
-Dungeon,Thursday,Ruins of Thunder Lv. 3,30,8,4000,133.3333333
-Dungeon,Thursday,Ruins of Miracles Lv. 4,50,5,5000,100
-Dungeon,Friday,The Wandering Spirit Lv. 1,10,7,500,50
-Dungeon,Friday,The Wandering Spirit Lv. 2,20,10,1600,80
-Dungeon,Friday,The Wandering Spirit Lv. 3,25,10,4100,164
-Dungeon,Friday,The Wandering Spirit Lv. 4,30,10,4500,150
-Dungeon,Weekends,Gold Valley Lv. 1,10,5,300,30
-Dungeon,Weekends,Gold Valley Lv. 2,20,5,1700,85
-Dungeon,Weekends,Gold Valley Lv. 3,30,5,4200,140
+,,,,Energy,Battles,EXP,EXP/Energy
+Mistral,Mistral,First,Start of Adventure,3,5,20,6.666666667
+Mistral,Mistral,First,Monsters of the Prairie,3,5,25,8.333333333
+Mistral,Mistral,First,Guardians of the Prairie,5,6,29,5.8
+Mistral,Mistral,Fire,Cave of Dancing Flames,3,5,32,10.66666667
+Mistral,Mistral,Fire,Wielder of Fire,3,5,35,11.66666667
+Mistral,Mistral,Fire,The Thief's Hideout,4,5,50,12.5
+Mistral,Mistral,Fire,The Blazing Beast,5,6,80,16
+Mistral,Mistral,Water,Breath Freezing Snowfields,3,5,35,11.66666667
+Mistral,Mistral,Water,Manipulator of the Water,3,5,40,13.33333333
+Mistral,Mistral,Water,The Pirate on Ice,4,5,53,13.25
+Mistral,Mistral,Water,The Dragon Hunting Ice Night,5,6,83,16.6
+Mistral,Mistral,Earth,Shadowy Forests,3,5,36,12
+Mistral,Mistral,Earth,Puppeteer of the Trees,3,5,42,14
+Mistral,Mistral,Earth,Bandit of the Forest,4,5,57,14.25
+Mistral,Mistral,Earth,Hunter from the Forest,5,6,84,16.8
+Mistral,Mistral,Thunder,Thunder Blasting Wetlands,3,5,41,13.66666667
+Mistral,Mistral,Thunder,Commander of the Thunder,3,5,47,15.66666667
+Mistral,Mistral,Thunder,Pirate of the Wetlands,4,5,59,14.75
+Mistral,Mistral,Thunder,The Thundering Strategist,5,6,87,17.4
+Mistral,Mistral,Light,Sacred Ruins,4,6,44,11
+Mistral,Mistral,Light,Wielder of the Light,4,6,51,12.75
+Mistral,Mistral,Light,The White Horse of Light,5,6,62,12.4
+Mistral,Mistral,Light,Moonlit Battle,7,7,89,12.71428571
+Mistral,Mistral,Dark,The Heinous Chamber,4,6,46,11.5
+Mistral,Mistral,Dark,Manipulator of the Dark,4,6,53,13.25
+Mistral,Mistral,Dark,The Cursed Snake,5,6,65,13
+Mistral,Mistral,Dark,The Monster Slaying Blade,7,7,91,13
+Mistral,Mistral,Final,The Skyhigh Tower,5,7,70,14
+Mistral,Mistral,Final,Monsters of the Corridor,5,7,90,18
+Mistral,Mistral,Final,The Stairs of Trial,6,7,110,18.33333333
+Mistral,Mistral,Final,The Forged Gigantor,8,8,180,22.5
+Mistral,Mistral,Bonus,Asleep in the Ice,20,5,2000,100
+Mistral,Morgan,Fire,The Burning Desert,5,7,180,36
+Mistral,Morgan,Fire,Bandit of the Desert,5,7,230,46
+Mistral,Morgan,Fire,The Precarious Beast Master,7,8,300,42.85714286
+Mistral,Morgan,Fire,The Power Seeking Swordsman,9,9,600,66.66666667
+Mistral,Morgan,Water,The Endless Shores,5,7,220,44
+Mistral,Morgan,Water,Pirate of the Shallow Waters,5,7,260,52
+Mistral,Morgan,Water,Knight of the Ripples,7,8,310,44.28571429
+Mistral,Morgan,Water,Incarnation of Water,7,8,380,54.28571429
+Mistral,Morgan,Water,Princess of the Icy Blade,9,9,650,72.22222222
+Mistral,Morgan,Earth,Pitch Dark Forests,5,7,240,48
+Mistral,Morgan,Earth,The Hunter of Time,7,8,330,47.14285714
+Mistral,Morgan,Earth,Incarnation of the Forest,7,8,410,58.57142857
+Mistral,Morgan,Earth,The Earth Shattering Spear,9,9,700,77.77777778
+Mistral,Morgan,Thunder,The Thunder Wrecked Land,5,7,280,56
+Mistral,Morgan,Thunder,Thief from the Skies,5,7,350,70
+Mistral,Morgan,Thunder,The Bewitching Tactician,7,8,390,55.71428571
+Mistral,Morgan,Thunder,Incarnation of Thunder,7,8,450,64.28571429
+Mistral,Morgan,Thunder,A Flash of Lightning,9,9,760,84.44444444
+Mistral,Morgan,Light,Land of the Light,6,7,350,58.33333333
+Mistral,Morgan,Light,The Magnificent Pegasus,6,7,460,76.66666667
+Mistral,Morgan,Light,Guardian of the Light,8,8,540,67.5
+Mistral,Morgan,Light,Incarnation of the Light,8,8,560,70
+Mistral,Morgan,Light,Sword of Lightning Speed,10,9,800,80
+Mistral,Morgan,Dark,The Land Devoured By Monsters,6,7,380,63.33333333
+Mistral,Morgan,Dark,The Lusting Snake,6,7,490,81.66666667
+Mistral,Morgan,Dark,Incarnation of the Dark,8,8,600,75
+Mistral,Morgan,Dark,The Peculiar Black Knight,10,9,860,86
+Mistral,Morgan,Final,The Never-Ending Tower,7,9,450,64.28571429
+Mistral,Morgan,Final,Stairway to the Heavens,7,9,520,74.28571429
+Mistral,Morgan,Final,Dance of the Lightning Flaems,8,9,600,75
+Mistral,Morgan,Final,Gale of the Ice Tree,8,9,700,87.5
+Mistral,Morgan,Final,Shadowless Creatures,9,9,800,88.88888889
+Mistral,Morgan,Final,The Eroding Barricade,10,10,1000,100
+Mistral,St. Lamia,Fire,Scorching Trails,8,8,800,100
+Mistral,St. Lamia,Fire,Watchdog from Hell,8,8,930,116.25
+Mistral,St. Lamia,Fire,Wings of the flaming Skies,9,9,1300,144.4444444
+Mistral,St. Lamia,Fire,The Banished Fire Dragon,9,9,1500,166.6666667
+Mistral,St. Lamia,Fire,Phoenix of the Volcano,12,11,2000,166.6666667
+Mistral,St. Lamia,Water,Mountain Snowstorm,8,8,930,116.25
+Mistral,St. Lamia,Water,The Captivated Water Sprite,8,8,1260,157.5
+Mistral,St. Lamia,Water,The Spring of Power,9,9,1440,160
+Mistral,St. Lamia,Water,Ruler of ther Water,9,9,1860,206.6666667
+Mistral,St. Lamia,Water,The Mountain-dwelling Devil,12,11,2230,185.8333333
+Mistral,St. Lamia,Earth,To the Crimson Forests,8,8,1050,131.25
+Mistral,St. Lamia,Earth,Frail Spirit of the Forests,8,8,1360,170
+Mistral,St. Lamia,Earth,Discord of the Earth,8,9,1750,218.75
+Mistral,St. Lamia,Earth,Maiden of the Trees,8,9,1930,241.25
+Mistral,St. Lamia,Earth,The World Tree,10,11,2220,222
+Mistral,St. Lamia,Thunder,Tarnished Peaks,8,8,1080,135
+Mistral,St. Lamia,Thunder,Cyclops of Lightning,8,8,1388,173.5
+Mistral,St. Lamia,Thunder,Float Like A Butterfly,8,9,1780,222.5
+Mistral,St. Lamia,Thunder,The Riotous Thunderbird,8,9,2010,251.25
+Mistral,St. Lamia,Thunder,The Raged Beast of Destruction,10,11,2350,235
+Mistral,St. Lamia,Light,Forbidden Sacred Grounds,9,8,1250,138.8888889
+Mistral,St. Lamia,Light,The Flourishing Garden,9,8,1430,158.8888889
+Mistral,St. Lamia,Light,Knight of the Light,9,9,1820,202.2222222
+Mistral,St. Lamia,Light,The Gooddess of War,9,9,2050,227.7777778
+Mistral,St. Lamia,Light,Conqueror of the Heavens,12,11,2400,200
+Mistral,St. Lamia,Dark,A Putrid Abyss,9,8,1280,142.2222222
+Mistral,St. Lamia,Dark,Vagabond of the Monster's Den,9,8,1460,162.2222222
+Mistral,St. Lamia,Dark,Dwelling of the Souls,9,9,1850,205.5555556
+Mistral,St. Lamia,Dark,The Midnight Aristocrat,9,9,2100,233.3333333
+Mistral,St. Lamia,Dark,The Death-beckoning Devo;,12,11,2440,203.3333333
+Mistral,St. Lamia,Final,To the Abominable Castle,9,10,1600,177.7777778
+Mistral,St. Lamia,Final,The Gates of Hell,9,10,2000,222.2222222
+Mistral,St. Lamia,Final,The Phony Paradise,9,11,2300,255.5555556
+Mistral,St. Lamia,Final,Saint and Devil,10,11,2500,250
+Mistral,St. Lamia,Final,The Fourfold Pillar,10,11,2600,260
+Mistral,St. Lamia,Final,Creator of the World,14,12,3000,214.2857143
+Cordelica,Cordelica,Fire,Inferno Gate,7,7,450,64.28571429
+Cordelica,Cordelica,Fire,Cave-Dwelling Assassins,7,7,550,78.57142857
+Cordelica,Cordelica,Fire,Hot Gale's Caress,8,8,850,106.25
+Cordelica,Cordelica,Fire,Before the Flame Princess,10,9,1000,100
+Cordelica,Cordelica,Water,The Foot of the Rainbow,7,7,470,67.14285714
+Cordelica,Cordelica,Water,Behind the Warefall,8,8,700,87.5
+Cordelica,Cordelica,Water,An Invisible Presence,8,8,900,112.5
+Cordelica,Cordelica,Water,The Battleaxe Descends,10,9,1100,110
+Cordelica,Cordelica,Earth,Entering the Foliage,9,8,1300,144.4444444
+Cordelica,Cordelica,Earth,Labyrinth of Trees,9,8,1410,156.6666667
+Cordelica,Cordelica,Earth,The Bandits' Trap,10,9,1800,180
+Cordelica,Cordelica,Earth,The Roaring Warrior,10,9,1920,192
+Cordelica,Cordelica,Earth,Master of Lomass,14,11,2100,150
+Cordelica,Cordelica,Thunder,The Moonlit Fortress,9,8,1330,147.7777778
+Cordelica,Cordelica,Thunder,Rushing the Enemy,9,8,1450,161.1111111
+Cordelica,Cordelica,Thunder,Assault from Above,10,9,1890,189
+Cordelica,Cordelica,Thunder,Cold-Hearted Sentries,10,9,2030,203
+Cordelica,Cordelica,Thunder,A Peaceful Courtyard,14,11,2300,164.2857143
+Cordelica,Cordelica,Light,The Shining Tower,10,10,2000,200
+Cordelica,Cordelica,Light,A Roar from the Darkness,10,10,2120,212
+Cordelica,Cordelica,Light,Deadly Melody,10,10,2180,218
+Cordelica,Cordelica,Light,Phoenix and the Sea Monster,12,10,2450,204.1666667
+Cordelica,Cordelica,Light,Dance of the Knight,12,10,2580,215
+Cordelica,Cordelica,Light,Howls and Gunshots,12,10,2630,219.1666667
+Cordelica,Cordelica,Light,The Voice of God,15,10,3100,206.6666667
+Cordelica,Cordelica,Dark,Into the Darkness,10,10,2060,206
+Cordelica,Cordelica,Dark,Protector of Nature,10,10,2160,216
+Cordelica,Cordelica,Dark,Howls in the Void,10,10,2240,224
+Cordelica,Cordelica,Dark,Where Lightning Strikes,12,10,2530,210.8333333
+Cordelica,Cordelica,Dark,Unifier of Demons,12,10,2681,223.4166667
+Cordelica,Cordelica,Dark,Hunter of Death,12,10,2750,229.1666667
+Cordelica,Cordelica,Dark,Rondo of Nightmares,15,10,3300,220
+Cordelica,Cordelica,Final,The Wandering the Ruins,12,10,2700,225
+Cordelica,Cordelica,Final,Last Light of the Ruins,12,10,2700,225
+Cordelica,Cordelica,Final,Beneath Ebony Wings,12,10,2700,225
+Cordelica,Cordelica,Final,A Guiding Star,12,10,2700,225
+Cordelica,Cordelica,Final,The Spoiled Fesco,12,10,2700,225
+Cordelica,Cordelica,Final,The Meaning of Irate Souls,12,10,2700,225
+Cordelica,Cordelica,Final,Rampage of the Giants,14,10,3200,228.5714286
+Cordelica,Cordelica,Final,The Giant God Awakes,16,11,3800,237.5
+Cordelica,Cordelica,Bonus,The Amorphus Being,25,5,2000,80
+Dungeon,Dungeon,Monday,Sacred Land of the Souls Lv. 1,13,6,300,23.07692308
+Dungeon,Dungeon,Monday,Sacred Land of the Souls Lv. 2,20,8,1500,75
+Dungeon,Dungeon,Monday,Sacred Land of the Souls Lv. 3,25,8,2500,100
+Dungeon,Dungeon,Tuesday,Garden of Nymphs,10,5,200,20
+Dungeon,Dungeon,Tuesday,Garden of Spirits,20,5,1300,65
+Dungeon,Dungeon,Tuesday,Garden of Idols,25,5,3000,120
+Dungeon,Dungeon,Tuesday,Phantom Pots,25,5,3000,120
+Dungeon,Dungeon,Wednesday,The Cave of Desires Lv. 1,10,5,500,50
+Dungeon,Dungeon,Wednesday,The Cave of Desires Lv. 2,20,6,2800,140
+Dungeon,Dungeon,Wednesday,The Cave of Desires Lv. 3,25,6,3500,140
+Dungeon,Dungeon,Thursday,Ruins of Fire Lv. 3,30,8,4000,133.3333333
+Dungeon,Dungeon,Thursday,Ruins of Water Lv. 3,30,8,4000,133.3333333
+Dungeon,Dungeon,Thursday,Ruins of Earth Lv. 3,30,8,4000,133.3333333
+Dungeon,Dungeon,Thursday,Ruins of Thunder Lv. 3,30,8,4000,133.3333333
+Dungeon,Dungeon,Thursday,Ruins of Miracles Lv. 4,50,5,5000,100
+Dungeon,Dungeon,Friday,The Wandering Spirit Lv. 1,10,7,500,50
+Dungeon,Dungeon,Friday,The Wandering Spirit Lv. 2,20,10,1600,80
+Dungeon,Dungeon,Friday,The Wandering Spirit Lv. 3,25,10,4100,164
+Dungeon,Dungeon,Friday,The Wandering Spirit Lv. 4,30,10,4500,150
+Dungeon,Dungeon,Weekends,Gold Valley Lv. 1,10,5,300,30
+Dungeon,Dungeon,Weekends,Gold Valley Lv. 2,20,5,1700,85
+Dungeon,Dungeon,Weekends,Gold Valley Lv. 3,30,5,4200,140
