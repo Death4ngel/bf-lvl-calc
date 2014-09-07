@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Exp
 var v = [];
 // Energy
@@ -64,10 +63,3 @@ function unboundedKnapsack(v, w, W, n) {
 	}
 	return { "exp": m[W], "quests": doQuests };
 }
-=======
-$(document).ready(function() {
-	$.get('data.csv', function(line) {
-		console.log(line);
-	});
-});
->>>>>>> Test read file
