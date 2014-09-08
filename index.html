@@ -2,23 +2,32 @@
 <html>
 <head>
 <script src="jquery-2.1.1.js"></script>
+<script src="glpk.js"></script>
 <script src="main.js"></script>
 <body>
 
 <h1>Brave Frontier Summoner Level Calculator</h1>
 
-<p>Give the most experience for your energy!</p>
-
+<p>Select the last quests unlocked</p>
 <form>
 <select id="mistral">
 </select>
 <br>
 <select id="cordelica">
 </select>
-<br>
+</form>
+
+<p>Give the most experience for your energy!</p>
+<form>
 <label for="nrgAvail">Available Energy: </label>
 <input type="text" id="nrgAvail">
-<button type="button" id="go">Go</button>
+<button type="button" id="nrgGo">Go</button>
+</form>
+<p>Use the least energy to level up!</p>
+<form>
+<label for="expNeeded">Experience needed: </label>
+<input type="text" id="expNeeded">
+<button type="button" id="expGo">Go</button>
 </form>
 
 <p id="quests">
