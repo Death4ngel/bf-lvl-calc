@@ -1,4 +1,8 @@
 var quests = {};
+var questNames = [];
+var exps = [];
+var ergs = [];
+var n = 0;
 
 $(document).ready(function() {
 	$.get('data.csv', function(data) {
@@ -44,95 +48,32 @@ $(document).ready(function() {
         }
     });
 	$("#nrgGo").click(function() {
-		var v = [];	// exp
-		var w = [];	// nrg
-		var W = parseInt($("#nrgAvail").val());
-		var n = 0;
-		var questNames = [];
-		var questName = $('#mistral').children(':selected').text();
-		for (var i = 0; i < quests.Mistral.length; ++i) {
-			var quest = quests.Mistral[i];
-			v.push(quest.exp);
-			w.push(quest.nrg);
-			++n;
-			questNames.push(quest.name);
-			if (quest.name === questName) {
-				break;
-			}
-		};
-		questName = $('#cordelica').children(':selected').text();
-		for (var i = 0; i < quests.Cordelica.length; ++i) {
-			var quest = quests.Cordelica[i];
-			v.push(quest.exp);
-			w.push(quest.nrg);
-			++n;
-			questNames.push(quest.name);
-			if (quest.name === questName) {
-				break;
-			}
-		};
-		quests.Dungeon.forEach(function(quest) {
-			v.push(quest.exp);
-			w.push(quest.nrg);
-			++n;
-			questNames.push(quest.name);
-		});
-		var result = unboundedKnapsack(v,w,W,n);
-		var html = "";
-		result["quests"].forEach(function(index) {
-			html += questNames[index] + "<br>\n"
-		});
-		html += "Total exp: " + result["exp"]
-		$("#quests").html(html);
+		getQuestsFromEnergy(parseInt($("#nrgAvail").val()));
 	});
-$("#expGo").click(function() {
-		var v = [];	// exp
-		var w = [];	// nrg
-		var W = parseInt($("#expNeeded").val());
-		var n = 0;
-		var questNames = [];
-		var questName = $('#mistral').children(':selected').text();
-		for (var i = 0; i < quests.Mistral.length; ++i) {
-			var quest = quests.Mistral[i];
-			v.push(quest.nrg);
-			w.push(quest.exp);
-			++n;
-			questNames.push(quest.name);
-			if (quest.name === questName) {
-				break;
-			}
-		};
-		questName = $('#cordelica').children(':selected').text();
-		for (var i = 0; i < quests.Cordelica.length; ++i) {
-			var quest = quests.Cordelica[i];
-			v.push(quest.nrg);
-			w.push(quest.exp);
-			++n;
-			questNames.push(quest.name);
-			if (quest.name === questName) {
-				break;
-			}
-		};
-		quests.Dungeon.forEach(function(quest) {
-			v.push(quest.nrg);
-			w.push(quest.exp);
-			++n;
-			questNames.push(quest.name);
-		});
-		var result = linearProgramming(v,w,W,n);
-		var html = "";
-		var nrg = 0;
-		var exp = 0;
-		result.forEach(function(index) {
-			html += questNames[index] + "<br>\n";
-			nrg += v[index];
-			exp += w[index];
-		});
-		html += "Total energy: " + nrg + "<br>" + "Total exp: " + exp;
-		$("#quests").html(html);
+	$("#expGo").click(function() {
+		getQuestsFromExperience(parseInt($("#expNeeded").val()));
 	});
 });
 
+/**
+Returns the quests that give the most experience
+*/
+function getQuestsFromEnergy(energy) {
+	selectQuests();
+	showQuests(unboundedKnapsack(exps, nrgs, energy, n));
+}
+
+/**
+Returns the quests that needs the least energy
+*/
+function getQuestsFromExperience(exp) {
+	selectQuests();
+	showQuests(linearProgramming(nrgs, exps, exp, n));
+}
+
+/**
+Returns a map from index to count
+*/
 // http://en.wikipedia.org/wiki/Knapsack_problem#Unbounded_knapsack_problem
 function unboundedKnapsack(v, w, W, n) {
 	var m = [];
@@ -154,14 +95,18 @@ function unboundedKnapsack(v, w, W, n) {
 		m[i] = max;
 		pick[i] = arg;
 	}
-	var doQuests = [];
+	var ret = {};
 	for (var i = W; i > 0;) {
-		if (pick[i] != -1) {
-			doQuests.push(pick[i]);
+		if (pick[i] !== -1) {
+			var index = pick[i];
+			if (!ret[index]) {
+				ret[index] = 0;
+			}
+			++ret[index];
 		}
 		i -= w[pick[i]];
 	}
-	return { "exp": m[W], "quests": doQuests };
+	return ret;
 }
 
 // http://hgourvest.github.io/glpk.js/
@@ -194,16 +139,66 @@ function linearProgramming(v, w, W, n) {
     for(i = 1; i <= glp_get_num_cols(lp); i++){
         result[glp_get_col_name(lp, i)] = glp_mip_col_val(lp, i);
     }
-    doQuests = [];
+    var ret = {};
     var i = 0;
     for (var key in result) {
     	var value = result[key];
-    	if (value > 0) {
-    		for (var j = 0; j < value; j++) {
-    			doQuests.push(i)
-    		}
-    	}
+    	if (value !== 0) {
+	    	ret[i] = value;
+	    }
     	++i;
     }
-    return doQuests;
+    return ret;
+}
+
+/**
+Updates the global arrays
+*/
+function selectQuests() {
+	questNames = [];
+	exps = [];
+	nrgs = [];
+	n = 0;
+	var questName = $('#mistral').children(':selected').text();
+	for (var i = 0; i < quests.Mistral.length; ++i) {
+		var quest = quests.Mistral[i];
+		nrgs.push(quest.nrg);
+		exps.push(quest.exp);
+		++n;
+		questNames.push(quest.name);
+		if (quest.name === questName) {
+			break;
+		}
+	};
+	questName = $('#cordelica').children(':selected').text();
+	for (var i = 0; i < quests.Cordelica.length; ++i) {
+		var quest = quests.Cordelica[i];
+		nrgs.push(quest.nrg);
+		exps.push(quest.exp);
+		++n;
+		questNames.push(quest.name);
+		if (quest.name === questName) {
+			break;
+		}
+	};
+	quests.Dungeon.forEach(function(quest) {
+		nrgs.push(quest.nrg);
+		exps.push(quest.exp);
+		++n;
+		questNames.push(quest.name);
+	});
+}
+
+function showQuests(indexToCount) {
+	var html = "";
+	var exp = 0;
+	var nrg = 0;
+	for (var index in indexToCount) {
+		var count = indexToCount[index];
+		html += count + "x: " + questNames[index] + "<br>\n"
+		exp += count * exps[index];
+		nrg += count * nrgs[index];
+	};
+	html += "Total energy: " + nrg + ", Total exp: " + exp
+	$("#quests").html(html);
 }
