@@ -5,34 +5,7 @@ var ergs = [];
 var n = 0;
 
 $(document).ready(function() {
-	$.get('data.csv', function(data) {
-		var lines = data.split("\n")
-		for (var i = 1; i < lines.length; ++i) {
-			var line = lines[i];
-			var tokens = line.split(",");
-			if (!quests[tokens[0]]) {
-				quests[tokens[0]] = [];
-			}
-			var name = tokens[1] + " (" + tokens[2] + "): " + tokens[3];
-			var quest = { "name": name, "nrg": parseInt(tokens[4]), "exp": parseInt(tokens[6]) };
-			quests[tokens[0]].push(quest);
-		};
-		var html = "";
-		var questName = "";
-		quests.Mistral.forEach(function(quest) {
-			questName = quest.name;
-			html += "<option>" + quest.name + "</option>\n";
-		});
-		$("#mistral").html(html);
-		$("#mistral").val(questName)
-		html = "";
-		quests.Cordelica.forEach(function(quest) {
-			questName = quest.name;
-			html += "<option>" + quest.name + "</option>\n";
-		});
-		$("#cordelica").html(html);
-		$('#cordelica').val(questName);
-	});
+	getQuests();
 	$('#nrgAvail').keypress(function(e) {
         if(e.which == 13) {
             $(this).blur();
@@ -54,6 +27,74 @@ $(document).ready(function() {
 		getQuestsFromExperience(parseInt($("#expNeeded").val()));
 	});
 });
+
+/**
+Reads quests from data.csv
+*/
+function getQuests() {
+	$.get('data.csv', function(data) {
+		var lines = data.split("\n")
+		for (var i = 1; i < lines.length; ++i) {
+			var line = lines[i];
+			var tokens = line.split(",");
+			var zone = tokens[0];
+			if (!quests[zone]) {
+				quests[zone] = {};
+			}
+			var map = tokens[1];
+			if (!quests[zone][map]) {
+				quests[zone][map] = {};
+			}
+			var element = tokens[2];
+			if (!quests[zone][map][element]) {
+				quests[zone][map][element] = [];
+			}
+			var name = tokens[3];
+			var quest = {
+				'zone': zone,
+				'map': map,
+				'element': element,
+				"name": name,
+				'fullname': map + ' (' + element + '): ' + name,
+				"nrg": parseInt(tokens[4]),
+				"exp": parseInt(tokens[6])
+			};
+			quests[zone][map][element].push(quest);
+		};
+		var html = '';
+		var i = 0;
+		for (var map in quests.Mistral) {
+			html += '<optgroup label="' + map + '">';
+			for (var element in quests.Mistral[map]) {
+				html += '<optgroup label="' + element + '">';
+				quests.Mistral[map][element].forEach(function(quest) {
+					html += '<option value="' + i + '">' + quest.name + "</option>\n";
+					++i;
+				});
+				html += '</optgroup>';
+			}
+			html += '</optgroup>';
+		};
+		$('#mistral').html(html);
+		$('#mistral').val(i-1);
+		html = '';
+		i = 0;
+		for (var map in quests.Cordelica) {
+			html += '<optgroup label="' + map + '">';
+			for (var element in quests.Cordelica[map]) {
+				html += '<optgroup label="' + element + '">';
+				quests.Cordelica[map][element].forEach(function(quest) {
+					html += '<option value="' + i + '">' + quest.name + "</option>\n";
+					++i;
+				});
+				html += '</optgroup>';
+			}
+			html += '</optgroup>';
+		};
+		$("#cordelica").html(html);
+		$('#cordelica').val(i-1);
+	});
+}
 
 /**
 Returns the quests that give the most experience
@@ -160,33 +201,45 @@ function selectQuests() {
 	nrgs = [];
 	n = 0;
 	var questName = $('#mistral').children(':selected').text();
-	for (var i = 0; i < quests.Mistral.length; ++i) {
-		var quest = quests.Mistral[i];
-		nrgs.push(quest.nrg);
-		exps.push(quest.exp);
-		++n;
-		questNames.push(quest.name);
-		if (quest.name === questName) {
-			break;
-		}
+	for (var map in quests.Mistral) {
+		for (var element in quests.Mistral[map]) {
+			for (var i = 0; i < quests.Mistral[map][element].length; ++i) {
+				var quest = quests.Mistral[map][element][i];
+				nrgs.push(quest.nrg);
+				exps.push(quest.exp);
+				++n;
+				questNames.push(quest.fullname);
+				if (quest.name === questName) {
+					break;
+				}
+			};
+		};
 	};
 	questName = $('#cordelica').children(':selected').text();
-	for (var i = 0; i < quests.Cordelica.length; ++i) {
-		var quest = quests.Cordelica[i];
-		nrgs.push(quest.nrg);
-		exps.push(quest.exp);
-		++n;
-		questNames.push(quest.name);
-		if (quest.name === questName) {
-			break;
-		}
+	for (var map in quests.Cordelica) {
+		for (var element in quests.Cordelica[map]) {
+			for (var i = 0; i < quests.Cordelica[map][element].length; ++i) {
+				var quest = quests.Cordelica[map][element][i];
+				nrgs.push(quest.nrg);
+				exps.push(quest.exp);
+				++n;
+				questNames.push(quest.fullname);
+				if (quest.name === questName) {
+					break;
+				}
+			};
+		};
 	};
-	quests.Dungeon.forEach(function(quest) {
-		nrgs.push(quest.nrg);
-		exps.push(quest.exp);
-		++n;
-		questNames.push(quest.name);
-	});
+	for (var map in quests.Dungeon) {
+		for (var element in quests.Dungeon[map]) {
+			quests.Dungeon[map][element].forEach(function(quest) {
+				nrgs.push(quest.nrg);
+				exps.push(quest.exp);
+				++n;
+				questNames.push(quest.fullname);
+			});
+		};
+	};
 }
 
 function showQuests(indexToCount) {
