@@ -61,38 +61,28 @@ function getQuests() {
 			};
 			quests[zone][map][element].push(quest);
 		};
-		var html = '';
-		var i = 0;
-		for (var map in quests.Mistral) {
-			html += '<optgroup label="' + map + '">';
-			for (var element in quests.Mistral[map]) {
-				html += '<optgroup label="' + element + '">';
-				quests.Mistral[map][element].forEach(function(quest) {
-					html += '<option value="' + i + '">' + quest.name + "</option>\n";
-					++i;
-				});
-				html += '</optgroup>';
+		for (var zone in quests) {
+			var id = zone.toLowerCase();
+			var elem = $('#' + id);
+			if (elem.length !== 0) {
+				var html = '';
+				var i = 0;
+				for (var map in quests[zone]) {
+					html += '<optgroup label="' + map + '">';
+					for (var element in quests[zone][map]) {
+						html += '<optgroup label="' + element + '">';
+						quests[zone][map][element].forEach(function(quest) {
+							html += '<option value="' + i + '">' + quest.name + "</option>\n";
+							++i;
+						});
+						html += '</optgroup>';
+					}
+					html += '</optgroup>';
+				};
+				elem.html(html);
+				elem.val(i-1);
 			}
-			html += '</optgroup>';
-		};
-		$('#mistral').html(html);
-		$('#mistral').val(i-1);
-		html = '';
-		i = 0;
-		for (var map in quests.Cordelica) {
-			html += '<optgroup label="' + map + '">';
-			for (var element in quests.Cordelica[map]) {
-				html += '<optgroup label="' + element + '">';
-				quests.Cordelica[map][element].forEach(function(quest) {
-					html += '<option value="' + i + '">' + quest.name + "</option>\n";
-					++i;
-				});
-				html += '</optgroup>';
-			}
-			html += '</optgroup>';
-		};
-		$("#cordelica").html(html);
-		$('#cordelica').val(i-1);
+		}
 	});
 }
 
@@ -200,44 +190,22 @@ function selectQuests() {
 	exps = [];
 	nrgs = [];
 	n = 0;
-	var questName = $('#mistral').children(':selected').text();
-	for (var map in quests.Mistral) {
-		for (var element in quests.Mistral[map]) {
-			for (var i = 0; i < quests.Mistral[map][element].length; ++i) {
-				var quest = quests.Mistral[map][element][i];
-				nrgs.push(quest.nrg);
-				exps.push(quest.exp);
-				++n;
-				questNames.push(quest.fullname);
-				if (quest.name === questName) {
-					break;
-				}
+	for (var zone in quests) {
+		var id = zone.toLowerCase();
+		var questName = $('#' + id).children(':selected').text();
+		for (var map in quests[zone]) {
+			for (var element in quests[zone][map]) {
+				for (var i = 0; i < quests[zone][map][element].length; ++i) {
+					var quest = quests[zone][map][element][i];
+					nrgs.push(quest.nrg);
+					exps.push(quest.exp);
+					++n;
+					questNames.push(quest.fullname);
+					if (quest.name === questName) {
+						break;
+					}
+				};
 			};
-		};
-	};
-	questName = $('#cordelica').children(':selected').text();
-	for (var map in quests.Cordelica) {
-		for (var element in quests.Cordelica[map]) {
-			for (var i = 0; i < quests.Cordelica[map][element].length; ++i) {
-				var quest = quests.Cordelica[map][element][i];
-				nrgs.push(quest.nrg);
-				exps.push(quest.exp);
-				++n;
-				questNames.push(quest.fullname);
-				if (quest.name === questName) {
-					break;
-				}
-			};
-		};
-	};
-	for (var map in quests.Dungeon) {
-		for (var element in quests.Dungeon[map]) {
-			quests.Dungeon[map][element].forEach(function(quest) {
-				nrgs.push(quest.nrg);
-				exps.push(quest.exp);
-				++n;
-				questNames.push(quest.fullname);
-			});
 		};
 	};
 }
