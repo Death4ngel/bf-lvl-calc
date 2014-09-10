@@ -192,7 +192,7 @@ function selectQuests() {
 	n = 0;
 	for (var zone in quests) {
 		var id = zone.toLowerCase();
-		var questName = $('#' + id).children(':selected').text();
+		var questName = $('#' + id + ' option').filter(':selected').text();
 		for (var map in quests[zone]) {
 			for (var element in quests[zone][map]) {
 				for (var i = 0; i < quests[zone][map][element].length; ++i) {

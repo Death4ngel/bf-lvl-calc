@@ -16,15 +16,14 @@
   </head>
 
   <body>
-
     <header>
       <div class="container">
         <h1>Brave Frontier Summoner Level Calculator</h1>
         <h2></h2>
 
-        <!--section id="downloads">
-          <a href="https://github.com/Death4ngel/bf-lvl-calc/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/Death4ngel/bf-lvl-calc/tarball/master" class="btn">Download as .tar.gz</a>
+        <section id="downloads">
+          <!--a href="https://github.com/Death4ngel/bf-lvl-calc/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/Death4ngel/bf-lvl-calc/tarball/master" class="btn">Download as .tar.gz</a-->
           <a href="https://github.com/Death4ngel/bf-lvl-calc" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section-->
       </div>
@@ -32,43 +31,54 @@
 
     <div class="container">
       <section id="main_content">
-        <p>Select the last quests unlocked</p>
-<form>
-<select id="mistral">
-</select>
-<br>
-<select id="cordelica">
-</select>
-</form>
+        <fieldset>
+          <legend>Select the last quests unlocked</legend>
+          <form>
+            <label for="mistral"> Mistral: </label>
+            <select id="mistral">
+            </select>
+            <br>
+            <label for="cordelica"> Cordelica: </label>
+            <select id="cordelica">
+            </select>
+          </form>
+        </fieldset>
 
-<p>Give the most experience for your energy!</p>
-<form>
-<label for="nrgAvail">Available Energy: </label>
-<input type="text" id="nrgAvail">
-<button type="button" id="nrgGo">Go</button>
-</form>
-<p>Use the least energy to level up!</p>
-<form>
-<label for="expNeeded">Experience needed: </label>
-<input type="text" id="expNeeded">
-<button type="button" id="expGo">Go</button>
-</form>
+        <fieldset>
+          <legend>Give the most experience for your energy!</legend>
+          <form>
+            <label for="nrgAvail">Available Energy: </label>
+            <input type="text" id="nrgAvail">
+            <button type="button" id="nrgGo">Go</button>
+          </form>
+        </fieldset>
 
-<p id="quests">
-</p>
+        <fieldset>
+          <legend>Use the least energy to level up!</legend>
+          <form>
+            <label for="expNeeded">Experience needed: </label>
+            <input type="text" id="expNeeded">
+            <button type="button" id="expGo">Go</button>
+          </form>
+        </fieldset>
+
+        <section>
+        <p id="quests">
+        </p>
+        </section>
       </section>
     </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-54660576-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-54660576-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
 
   </body>
 </html>
