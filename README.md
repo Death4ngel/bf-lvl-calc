@@ -1,4 +1,4 @@
 bf-lvl-calc
 ===========
 
-Brave Frontier Summoner Level Calculator
+# Brave Frontier Summoner Level Calculator
