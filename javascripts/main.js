@@ -194,6 +194,7 @@ function selectQuests() {
 		var id = zone.toLowerCase();
 		var questName = $('#' + id + ' option').filter(':selected').text();
 		for (var map in quests[zone]) {
+			var flag = false;
 			for (var element in quests[zone][map]) {
 				for (var i = 0; i < quests[zone][map][element].length; ++i) {
 					var quest = quests[zone][map][element][i];
@@ -202,9 +203,13 @@ function selectQuests() {
 					++n;
 					questNames.push(quest.fullname);
 					if (quest.name === questName) {
+						flag = true;
 						break;
 					}
 				};
+				if (flag) {
+					break;
+				}
 			};
 		};
 	};
