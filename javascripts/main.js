@@ -26,6 +26,9 @@ $(document).ready(function() {
 	$("#expGo").click(function() {
 		getQuestsFromExperience(parseInt($("#expNeeded").val()));
 	});
+	$("#nrgGo2").click(function() {
+		getQuestFromEnergy(parseInt($("#nrgAvail2").val()));
+	});
 });
 
 /**
@@ -84,6 +87,21 @@ function getQuests() {
 			}
 		}
 	});
+}
+
+function getQuestFromEnergy(energy) {
+	selectQuests();
+	var arg = -1;
+	var max = -1;
+	for (var i = 0; i < n; ++i) {
+		if (nrgs[i] <= energy && exps[i] > max) {
+			max = exps[i];
+			arg = i;
+		}
+	}
+	var ret = {};
+	ret[arg] = 1;
+	showQuests(ret);
 }
 
 /**
